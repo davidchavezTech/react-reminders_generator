@@ -1,4 +1,4 @@
-import Task from "./task.jsx"
+import Task from "./Task.jsx"
 
 const Tasks = ({ tasks, onDelete, onToggle }) =>{
     return (
