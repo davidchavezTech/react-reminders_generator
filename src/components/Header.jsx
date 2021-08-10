@@ -1,14 +1,11 @@
 import Button from "./Button"
 
-const Header = () => {
-    const handleClick = (e) =>{
-        console.log('click')
-    }
+const Header = ({ onAdd, showAddOrClose }) => {
 
     return (
         <header className="header">
             <h1>Task Tracker</h1>
-            <Button text="Add" color="green" onClick={handleClick} />
+            <Button text={showAddOrClose ? 'Close' : 'Add'} color={showAddOrClose ? 'red' : 'green'} onClick={onAdd} />
         </header>
     )
 }
